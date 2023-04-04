@@ -33,9 +33,10 @@ aside {
 html,
 body {
     height: 100%;
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
     line-height: 1;
+    font-family: 'Mont', sans-serif;
+    width: 100%;
+    font-weight: 600;
     font-size: 18px;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -56,6 +57,7 @@ input::-ms-clear {
 
 button {
     font-size: inherit;
+    font-weight: inherit;
     cursor: pointer;
 }
 
@@ -64,13 +66,9 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-a,
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
+a {
+	text-decoration: none;
+	color: unset;
 }
 
 ul li {
@@ -88,7 +86,14 @@ h4,
 h5,
 h6 {
     font-size: inherit;
-    font-weight: inherit;
+}
+
+h1{
+    line-height: .88;
+    font-size: 96px;
+}
+h2{
+    font-size: 52px;
 }
 
 a.text:active,
