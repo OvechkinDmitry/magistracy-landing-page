@@ -1,1 +1,15 @@
-@import url(//db.onlinewebfonts.com/c/6cce6b8c74a8ac84c45963dbac1e025a?family=Mont);
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/mont/Mont-Bold.woff") format("woff");
+
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/mont/Mont-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/mont/Mont-SemiBold.woff") format("woff");
+}
