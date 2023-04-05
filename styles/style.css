@@ -2,9 +2,10 @@
     --main-red-color: #EF302B;
     --main-blue-color: #1E4391;
     --btn-color-hover: #C0231F;
-    --toggle-title-inactive: #222222;
+    --toggle-title-inactive: rgba(167, 167, 167, 255);;
     --forter-gradient-color: linear-gradient(270deg, #FF2D7F -0.71%, #FB3727 47.63%, #FEEA0F 100%);
     --header-background-linear: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    --time-color-blue: rgba(75,105,167,255)
 }
 
 ._container {
@@ -15,6 +16,10 @@
 ._subtitle {
     font-size: 16px;
     line-height: 140%;
+}
+
+.active-blue{
+    color: var(--main-blue-color);
 }
 
 .btn {
@@ -139,7 +144,7 @@
 
 .introduction__info {
     display: grid;
-    grid-template-columns: 880px 496px;
+    grid-template-columns: 720px 496px;
     align-content: space-between;
     justify-content: space-between;
     line-height: 1.1;
@@ -225,4 +230,175 @@
 
 /*about*/
 
+/*kak postupit*/
+.main__admission{
+    margin-top: 120px;
+}
+.admission h2{
+    color: var(--main-blue-color);
+}
+.admission__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.admission__toggle{
+    font-size: 24px;
+    color: var(--toggle-title-inactive);
+    display: flex;
+    align-items: center;
+}
+.admission__checkbox{
+    margin: 0 20px;
+
+}
+.admission__checkbox input[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    width: 54px;
+    height: 26px;
+    background: var(--main-blue-color);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.admission__checkbox input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.admission__checkbox input[type="checkbox"]:checked::after {
+    left: calc(100% - 22px);
+}
+
+.main__admission .link-underlined{
+    color: var(--main-blue-color);
+}
+.main__admission .link-underlined::after{
+    background: var(--main-blue-color);
+}
+
+.admission__steps{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.admission__step{
+    width: 368px;
+}
+.admission__paragraph{
+    position: relative;
+    display: flex;
+    word-break: break-word;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.admission__paragraph::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 19px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--main-blue-color);
+    z-index: -100;
+}
+.paragraph{}
+.paragraph__number{
+    margin-right: 21px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: var(--main-blue-color);
+}
+.paragraph__title{
+    color: var(--main-blue-color);
+    font-weight: 600;
+}
+.admission__subparagraph{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+}
+
+.subparagraph{}
+.subparagraph__item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 16px;
+    position: relative;
+    padding: 0 0 0 61px;
+    font-size: 16px;
+}
+.subparagraph__item p::before{
+    position: absolute;
+    top: 2px;
+    left: 13px;
+    content: "";
+    background: white;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid var(--main-blue-color);
+}
+.subparagraph__item:not(:last-child) p::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 19px;
+    width: 2px;
+    height: calc(100% + 28px);
+    background-color: var(--main-blue-color);
+    z-index: -100;
+}
+
+.admission__step_red .paragraph__number{
+    background-color: var(--main-red-color);
+}
+.admission__step_red .admission__paragraph::before{
+    background-color: var(--main-red-color);
+}
+.admission__step_red .subparagraph__item p::before{
+    border: 2px solid var(--main-red-color);
+}
+.admission__step_red .subparagraph__item:not(:last-child) p::after{
+    background-color: var(--main-red-color);
+}
+
+
+.subparagraph__details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 11px;
+    font-size: 14px;
+    color: var(--toggle-title-inactive);
+}
+.subparagraph__time{
+    color: var(--time-color-blue);
+}
+
+/**/
 /*main*/
+
+.footer{
+    height: 32px;
+    margin-top: 76px;
+    background: var(--forter-gradient-color);
+}

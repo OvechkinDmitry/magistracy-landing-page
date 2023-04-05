@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/header.js" defer></script>
+    <script src="scripts/toggle.js" defer></script>
     <title>Магистратура в Химико-технологическом институте</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
             <button class="header__button btn">Хочу поступить</button>
         </div>
     </header>
-    <main class="main" style="height: 200vh">
+    <main class="main">
         <section class="main__introduction introduction">
             <div class="introduction__container _container">
                 <div class="introduction__info">
@@ -47,7 +48,8 @@
             <div class="about__container _container">
                 <div>
                     <h2>Об институте</h2>
-                    <p class="_subtitle">ХТИ - это глубокие научные и образовательные традиции, а также высококвалифицированные
+                    <p class="_subtitle">ХТИ - это глубокие научные и образовательные традиции, а также
+                        высококвалифицированные
                         сотрудники,
                         обладающие богатым опытом в решении разноплановых фундаментальных и прикладных задач в области
                         современной химии и химической технологии.</p>
@@ -57,10 +59,10 @@
                 <div>
                     <div class="about__row">
                         <iframe class="about__video"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                src="https://www.youtube.com/embed/JVxCkyjs2Q4">
                         </iframe>
                         <iframe class="about__video"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                src="https://www.youtube.com/embed/Xh0siMyeofE">
                         </iframe>
                     </div>
                     <div class="about__row">
@@ -80,8 +82,104 @@
                 </div>
             </div>
         </section>
+        <section class="main__admission admission _container">
+            <div class="admission__header">
+                <h2>Как поступить?</h2>
+                <div class="admission__toggle">
+                    <p class="active-blue">Бюджет</p>
+                    <div class="admission__checkbox">
+                        <input id="switcher" type="checkbox">
+                    </div>
+                    <p>Контракт</p>
+                </div>
+            </div>
+            <div class="admission__steps">
+                <div class="admission__step">
+                    <div class="admission__paragraph paragraph">
+                        <div class="paragraph__number">1</div>
+                        <div class="paragraph__title">Узнайте о поступлении</div>
+                    </div>
+                    <ul class="admission__subparagraph subparagraph">
+                        <li class="subparagraph__item">
+                            <p>Правила приема</p>
+                        </li>
+                        <li class="subparagraph__item">
+                            <p>Сроки подачи документов</p>
+                            <ul class="subparagraph__details">
+                                <li>
+                                    <p>Очная форма обучения: </p>
+                                    <p class="subparagraph__time" data-active="20.06 - 23.09" data-inactive="20.06 - 08.08">20.06 - 08.08</p>
+                                </li>
+                                <li>
+                                    <p>Очно-заочная форма обучения: </p>
+                                    <p class="subparagraph__time" data-active="20.06 - 28.10" data-inactive="20.06 - 08.08">20.06 - 08.08</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admission__step">
+                    <div class="admission__paragraph paragraph">
+                        <div class="paragraph__number">2</div>
+                        <div class="paragraph__title">Выберите образовательную программу</div>
+                    </div>
+                    <ul class="admission__subparagraph subparagraph">
+                        <li class="subparagraph__item">
+                            <p>Каталог образовательных программ</p>
+                            <ul class="subparagraph__details">
+                                <li>
+                                    <a href="#" class="link-underlined">Смотреть программы</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admission__step admission__step_red">
+                    <div class="admission__paragraph paragraph">
+                        <div class="paragraph__number">3</div>
+                        <div class="paragraph__title">Подайте документы</div>
+                    </div>
+                    <ul class="admission__subparagraph subparagraph">
+                        <li class="subparagraph__item">
+                            <p>Подать документы онлайн через личный кабинет абитуриента</p>
+                            <ul class="subparagraph__details">
+                                <li>
+                                    <a href="#" class="link-underlined">Регистрация</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="admission__step">
+                    <div class="admission__paragraph paragraph">
+                        <div class="paragraph__number">4</div>
+                        <div class="paragraph__title">Пройдите вступительные испытания</div>
+                    </div>
+                    <ul class="admission__subparagraph subparagraph">
+                        <li class="subparagraph__item">
+                            <p>Период сдачи вступительных испытаний</p>
+                        </li>
+                        <li class="subparagraph__item">
+                            <ul class="subparagraph__details">
+                                <li>
+                                    <p>Очная форма обучения: </p>
+                                    <p class="subparagraph__time" data-inactive="04.07 - 13.08"
+                                       data-active="04.07 - 13.08 и 22.08 - 24.09">04.07 - 13.08</p>
+                                </li>
+                                <li>
+                                    <p>Очно-заочная форма обучения: </p>
+                                    <p class="subparagraph__time" data-inactive="04.07 - 13.09 и 22.08 - 12.09"
+                                       data-active="04.07 - 13.08 и 22.08 - 29.10">04.07 - 13.09 и 22.08 - 12.09</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer _container"></footer>
+    <footer class="footer">
+    </footer>
 </div>
 </body>
 
