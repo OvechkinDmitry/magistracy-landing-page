@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/mont/Mont-Bold.woff") format("woff");
+
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/mont/Mont-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Mont";
+    src: url("../fonts/mont/Mont-SemiBold.woff") format("woff");
+}
