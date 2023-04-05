@@ -4,7 +4,7 @@ Cсылка на деплой <a href="https://magistracy-landing-page.vercel.ap
 
 Для запуска проекта:
 <ul>
-    <li>Скачайте и установите `nodejs`</li>
+    <li>Скачайте и установите Nodejs</li>
     <li>Установите необходимые зависимости командой npm i</li>
     <li>Запустите сервер командой npm run dev</li>
 </ul>
